@@ -33,6 +33,10 @@
       {{ partial "toc.html" . }}
       {{ .Content }}
     </article>
+    <section class="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+        <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </section>
 
     {{- if .Params.series }}
     <section class="article-series">
@@ -52,8 +56,6 @@
       {{- end }}
     </section>
     {{- end }}
-
-    {{ partial "share.html" . }}
 
     {{- if and .Site.DisqusShortname (or (not (isset .Params "comments")) (eq .Params.comments nil) .Params.comments) }}
     <div class="disqus-comments">
@@ -77,5 +79,7 @@
       <li class="pager-older pager-noitem">Older &gt;</li>
       {{- end }}
     </ul>
-  </div>
+    {{- if (.Params.gitment) }}
+      {{ partial "gitment.html" . }}
+    {{- end }}
 {{ end }}
