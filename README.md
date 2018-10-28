@@ -11,8 +11,7 @@ This is simple and functional [Hugo](https://gohugo.io/) theme.
 * add categories and tags in list.html
 * add license in single.html
 * update fontawesome jquery bootstrap
-(to do)
-* add gitalk
+* add gitalk (to do)
 
 ## Installation
 
