@@ -12,6 +12,8 @@ This is simple and functional [Hugo](https://gohugo.io/) theme.
 * add license in single.html
 * update fontawesome jquery bootstrap
 * add gitalk (to do)
+## Sample
+[https://Jnchk.github.io](https://Jnchk.github.io)
 
 ## Installation
 
